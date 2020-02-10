@@ -18,6 +18,6 @@ def find_the_cheese(maybe_cheese)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   
-  cheese_types.index {
+  maybe_cheese.index { |maybe| cheese_types.include?(maybe) }
   
 end
