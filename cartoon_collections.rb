@@ -10,7 +10,8 @@ end
 
 def long_planeteer_calls(planeteer_calls)# code an argument here
   # Your code here
-   if planeteer_calls.each { |call| call.length > 4}
+   larger_than_four = planeteer_calls.map { |call| call.length > 4}
+   if larger_than_four.each
      return true
    end
    false
