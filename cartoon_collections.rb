@@ -10,11 +10,8 @@ end
 
 def long_planeteer_calls(planeteer_calls)# code an argument here
   # Your code here
-   larger_than_four = planeteer_calls.map { |call| call.length > 4}
-   if larger_than_four.each
-     return true
-   end
-   false
+  planeteer_calls.map { |call| call.length > 4}
+
 end
 
 def find_the_cheese# code an argument here
